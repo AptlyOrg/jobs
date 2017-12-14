@@ -5,7 +5,8 @@ declare -a arr=("Commerce-Bank"
                 "C2FO"
                 "Kansas-City-Public-Library"
                 "First-National-Bank-of-Omaha"
-                "C-%26-C-Group-2")
+                "C-%26-C-Group-2"
+                "Garmin")
 
 for i in "${arr[@]}"
 do
