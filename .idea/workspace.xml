@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66978bb6-835e-4c60-a330-641d4773c48d" name="Default" comment="Add sequencing that supports multiple downloads against Indeeds 25 job API limit">
+    <list default="true" id="66978bb6-835e-4c60-a330-641d4773c48d" name="Default" comment="Add a preparatory pass to determine number of jobs available per HO and &#10;  use value to determine number of pages to retrieve.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CFO.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Commerce-Bank.json" afterPath="$PROJECT_DIR$/Commerce-Bank.json" />
-      <change beforePath="$PROJECT_DIR$/DST-Systems.json" afterPath="$PROJECT_DIR$/DST-Systems.json" />
-      <change beforePath="$PROJECT_DIR$/First-National-Bank-of-Omaha.json" afterPath="$PROJECT_DIR$/First-National-Bank-of-Omaha.json" />
-      <change beforePath="$PROJECT_DIR$/Kansas-City-Public-Library.json" afterPath="$PROJECT_DIR$/Kansas-City-Public-Library.json" />
+      <change beforePath="$PROJECT_DIR$/C2FO.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Commerce-Bank.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DST-Systems.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/First-National-Bank-of-Omaha.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Kansas-City-Public-Library.json" afterPath="" />
       <change beforePath="$PROJECT_DIR$/jobs.sh" afterPath="$PROJECT_DIR$/jobs.sh" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,58 +25,18 @@
       <file leaf-file-name="jobs.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jobs.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="C2FO.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/C2FO.json">
+      <file leaf-file-name="commerce-bank.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/commerce-bank.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Kansas-City-Public-Library.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Kansas-City-Public-Library.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="First-National-Bank-of-Omaha.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/First-National-Bank-of-Omaha.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-139">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DST-Systems.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DST-Systems.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-184">
-              <caret line="0" column="141" lean-forward="false" selection-start-line="0" selection-start-column="141" selection-end-line="0" selection-end-column="141" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Commerce-Bank.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Commerce-Bank.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+            <state relative-caret-position="-18469">
+              <caret line="0" column="658" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="210332" />
               <folding />
             </state>
           </provider>
@@ -90,6 +50,7 @@
       <find>company&quot;:</find>
       <find>&quot;company&quot;:</find>
       <find>--_curl_--https</find>
+      <find>[</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -104,9 +65,10 @@
         <option value="$PROJECT_DIR$/Kansas-City-Public-Library.json" />
         <option value="$PROJECT_DIR$/First-National-Bank-of-Omaha.json" />
         <option value="$PROJECT_DIR$/DST-Systems.json" />
-        <option value="$PROJECT_DIR$/Commerce-Bank.json" />
         <option value="$PROJECT_DIR$/CFO.json" />
+        <option value="$PROJECT_DIR$/Commerce-Bank.json" />
         <option value="$PROJECT_DIR$/jobs.sh" />
+        <option value="$PROJECT_DIR$/commerce-bank.json" />
       </list>
     </option>
   </component>
@@ -240,7 +202,7 @@
       <workItem from="1513037645657" duration="12233000" />
       <workItem from="1513138715317" duration="160000" />
       <workItem from="1513139115464" duration="101000" />
-      <workItem from="1513139234537" duration="21330000" />
+      <workItem from="1513139234537" duration="25389000" />
     </task>
     <task id="LOCAL-00001" summary="Add sequencing that supports multiple downloads against Indeeds 25 job API limit">
       <created>1513221419205</created>
@@ -249,21 +211,28 @@
       <option name="project" value="LOCAL" />
       <updated>1513221419205</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add a preparatory pass to determine number of jobs available per HO and &#10;  use value to determine number of pages to retrieve.">
+      <created>1513229183677</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1513229183677</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43583000" />
+    <option name="totallyTimeSpent" value="47642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1140" y="-1003" width="1505" height="871" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7675963" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53739613" sideWeight="0.13078292" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7954847" sideWeight="0.8692171" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.560425" sideWeight="0.8692171" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Viewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38640326" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -289,7 +258,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add sequencing that supports multiple downloads against Indeeds 25 job API limit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sequencing that supports multiple downloads against Indeeds 25 job API limit" />
+    <MESSAGE value="Add a preparatory pass to determine number of jobs available per HO and &#10;  use value to determine number of pages to retrieve." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a preparatory pass to determine number of jobs available per HO and &#10;  use value to determine number of pages to retrieve." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -425,14 +395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DST-Systems.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-184">
-          <caret line="0" column="141" lean-forward="false" selection-start-line="0" selection-start-column="141" selection-end-line="0" selection-end-column="141" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CFO.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -441,15 +403,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/First-National-Bank-of-Omaha.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-139">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C2FO.json">
+    <entry file="file://$PROJECT_DIR$/c-%26-c-group-2.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -457,7 +411,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kansas-City-Public-Library.json">
+    <entry file="file://$PROJECT_DIR$/kansas-city-public-library.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -467,16 +421,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jobs.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Commerce-Bank.json">
+    <entry file="file://$PROJECT_DIR$/c2fo.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c-&amp;-c-group-2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dst-systems.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="141" lean-forward="false" selection-start-line="0" selection-start-column="141" selection-end-line="0" selection-end-column="141" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first-national-bank-of-omaha.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commerce-bank.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18469">
+          <caret line="0" column="658" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="210332" />
           <folding />
         </state>
       </provider>
