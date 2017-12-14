@@ -22,10 +22,15 @@ do
           -H 'X-Mashape-Key: YjtQBqSWKmmshwn5c06JmE2Ut5VSp1X5Z25jsn9laldG042Uoy' \
         | grep totalResults | jq -r '.totalResults')
 
+if [ "$jobcount" -eq "0" ]
+then
+    printf "\n\nPrepping $decodedname... hmmmm, no jobs found... <sigh>\n"
+    printf "Suspended download.\n"
+else
     printf "\n\nPrepping $decodedname...\t $jobcount job(s) found!\n"
     printf '' > $decodedname.json
     printf "Retrieving job(s)...\n"
-
+fi
 
 if [ "$jobcount" -lt "$limitcount" ]
 then
