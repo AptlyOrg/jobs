@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66978bb6-835e-4c60-a330-641d4773c48d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,8 +30,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1508">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="110">
+              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -397,11 +398,25 @@
       <option name="project" value="LOCAL" />
       <updated>1513634682584</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Put gitignore config in place to avoid webstorm et.al from going remote">
+      <created>1513636817782</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1513636817782</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Put gitignore config in place to avoid webstorm et.al from going remote">
+      <created>1513636877433</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1513636877433</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73914000" />
+    <option name="totallyTimeSpent" value="74092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1191" y="-886" width="1505" height="871" extended-state="0" />
@@ -452,7 +467,8 @@
     <MESSAGE value="Add a preparatory pass to determine number of jobs available per HO and &#10;  use value to determine number of pages to retrieve." />
     <MESSAGE value="Add C&amp;C Group to HOs list&#10;  Manually mend multi-page downloads&#10;  Clean up pretty filenames to exclude ugly search string" />
     <MESSAGE value="Cleanup/Comment code&#10;  Add summary report to output and archive file&#10;  Break out HO search strings into a dedicated file (ho.txt)&#10;  Write files to dedicated directory(./archive)for importing into&#10;    Confluence as attachments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup/Comment code&#10;  Add summary report to output and archive file&#10;  Break out HO search strings into a dedicated file (ho.txt)&#10;  Write files to dedicated directory(./archive)for importing into&#10;    Confluence as attachments" />
+    <MESSAGE value="Put gitignore config in place to avoid webstorm et.al from going remote" />
+    <option name="LAST_COMMIT_MESSAGE" value="Put gitignore config in place to avoid webstorm et.al from going remote" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -668,8 +684,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1508">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="110">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
           <folding />
         </state>
       </provider>
