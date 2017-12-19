@@ -14,7 +14,7 @@ printf '' > $summaryfile
 
 for i in "${arr[@]}"
 do
-    decodedname=`echo ${i//%26/&} | tr "[:upper:]" "[:lower:]"`
+    decodedname=`echo ${i//%26/&} | tr -d '.' | tr "[:upper:]" "[:lower:]"`
     limitcount=25
     startstring=""
 

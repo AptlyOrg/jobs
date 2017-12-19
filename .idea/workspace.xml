@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="66978bb6-835e-4c60-a330-641d4773c48d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/archive/trending/c-&amp;-c-group-2.json" afterPath="$PROJECT_DIR$/archive/examples/trending/c-&amp;-c-group-2.json" />
+      <change beforePath="$PROJECT_DIR$/archive/trending/c2fo.json" afterPath="$PROJECT_DIR$/archive/examples/trending/c2fo.json" />
+      <change beforePath="$PROJECT_DIR$/archive/trending/commerce-bank.json" afterPath="$PROJECT_DIR$/archive/examples/trending/commerce-bank.json" />
+      <change beforePath="$PROJECT_DIR$/archive/trending/dst-systems.json" afterPath="$PROJECT_DIR$/archive/examples/trending/dst-systems.json" />
+      <change beforePath="$PROJECT_DIR$/archive/trending/first-national-bank-of-omaha.json" afterPath="$PROJECT_DIR$/archive/examples/trending/first-national-bank-of-omaha.json" />
+      <change beforePath="$PROJECT_DIR$/archive/trending/garmin.json" afterPath="$PROJECT_DIR$/archive/examples/trending/garmin.json" />
+      <change beforePath="$PROJECT_DIR$/archive/trending/kansas-city-public-library.json" afterPath="$PROJECT_DIR$/archive/examples/trending/kansas-city-public-library.json" />
       <change beforePath="$PROJECT_DIR$/jobs.sh" afterPath="$PROJECT_DIR$/jobs.sh" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,18 +24,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="jobs.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jobs.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jobs.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="89">
+              <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="summary.txt.Mon Dec 18 14:07:08 MST 2017" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/archive/examples/summary.txt.Mon Dec 18 14:07:08 MST 2017">
+      <file leaf-file-name="c2fo.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/archive/examples/trending/c2fo.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="175" lean-forward="false" selection-start-line="0" selection-start-column="175" selection-end-line="0" selection-end-column="175" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="c-&amp;-c-group-2.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/archive/examples/trending/c-&amp;-c-group-2.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="184" lean-forward="false" selection-start-line="0" selection-start-column="184" selection-end-line="0" selection-end-column="184" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commerce-bank.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/archive/examples/trending/commerce-bank.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -37,8 +64,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kansas-city-public-library.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/archive/examples/kansas-city-public-library.json">
+      <file leaf-file-name="first-national-bank-of-omaha.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/archive/examples/trending/first-national-bank-of-omaha.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -47,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trending.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trending.sh">
+      <file leaf-file-name="ho.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ho.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="19" column="71" lean-forward="false" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
+            <state relative-caret-position="75">
+              <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -60,27 +87,37 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="115">
+              <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="commerce-bank.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/archive/examples/commerce-bank.json">
+      <file leaf-file-name="garmin.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/archive/examples/trending/garmin.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="1" column="504" lean-forward="false" selection-start-line="1" selection-start-column="504" selection-end-line="1" selection-end-column="504" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dst-systems.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/archive/examples/trending/dst-systems.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="kansas-city-public-library.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/archive/trending/kansas-city-public-library.json">
+        <entry file="file://$PROJECT_DIR$/archive/examples/trending/kansas-city-public-library.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="0">
               <caret line="0" column="1144" lean-forward="false" selection-start-line="0" selection-start-column="1144" selection-end-line="0" selection-end-column="1144" />
               <folding />
             </state>
@@ -103,8 +140,8 @@
       <find>&gt;</find>
       <find>&quot;</find>
       <find>#</find>
-      <find>workspace.</find>
       <find>trendingname</find>
+      <find>workspace.</find>
       <find>alljobs</find>
     </findStrings>
     <replaceStrings>
@@ -137,8 +174,8 @@
         <option value="$PROJECT_DIR$/garmin.json" />
         <option value="$PROJECT_DIR$/trending.json" />
         <option value="$PROJECT_DIR$/ho.txt" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/trending.sh" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/jobs.sh" />
       </list>
     </option>
@@ -259,7 +296,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Bash.trending.sh">
+  <component name="RunManager" selected="Bash.jobs.sh">
     <configuration name="jobs.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="bash" />
       <option name="INTERPRETER_PATH" value="/usr/bin/env" />
@@ -286,8 +323,8 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Bash.trending.sh" />
-        <item index="1" class="java.lang.String" itemvalue="Bash.jobs.sh" />
+        <item index="0" class="java.lang.String" itemvalue="Bash.jobs.sh" />
+        <item index="1" class="java.lang.String" itemvalue="Bash.trending.sh" />
         <item index="2" class="java.lang.String" itemvalue="Bash.jobs.sh" />
         <item index="3" class="java.lang.String" itemvalue="Bash.trending.sh" />
       </list>
@@ -412,21 +449,28 @@
       <option name="project" value="LOCAL" />
       <updated>1513716849339</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Remove alljobs extract residual, necessary since the Confluence publisher does not handle zero-byte files.">
+      <created>1513718018999</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1513718018999</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82178000" />
+    <option name="totallyTimeSpent" value="83032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1191" y="-886" width="1505" height="871" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3811421" sideWeight="0.52785146" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7410359" sideWeight="0.44827586" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4674635" sideWeight="0.3244916" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7410359" sideWeight="0.55172414" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4674635" sideWeight="0.67992926" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4674635" sideWeight="0.6755084" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Viewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38640326" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2258727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -470,7 +514,8 @@
     <MESSAGE value="Put gitignore config in place to avoid webstorm et.al from going remote" />
     <MESSAGE value="Move example files from archive root to its own subdirectory under archive" />
     <MESSAGE value="Move trending extract to archive for push to Confluence" />
-    <option name="LAST_COMMIT_MESSAGE" value="Move trending extract to archive for push to Confluence" />
+    <MESSAGE value="Remove alljobs extract residual, necessary since the Confluence publisher does not handle zero-byte files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove alljobs extract residual, necessary since the Confluence publisher does not handle zero-byte files." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -547,73 +592,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/archive/trending/c2fo.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="175" lean-forward="false" selection-start-line="0" selection-start-column="175" selection-end-line="0" selection-end-column="175" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/archive/summary.txt.Mon Dec 18 14:28:29 MST 2017">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ho.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archive/trending/c-&amp;-c-group-2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="184" lean-forward="false" selection-start-line="0" selection-start-column="184" selection-end-line="0" selection-end-column="184" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archive/trending/commerce-bank.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archive/trending/first-national-bank-of-omaha.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archive/trending/garmin.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archive/trending/dst-systems.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archive/trending/kansas-city-public-library.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="0" column="1144" lean-forward="false" selection-start-line="0" selection-start-column="1144" selection-end-line="0" selection-end-column="1144" />
           <folding />
         </state>
       </provider>
@@ -658,14 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/archive/alljobs.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -706,10 +680,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ho.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jobs.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="89">
+          <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/examples/trending/c2fo.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="175" lean-forward="false" selection-start-line="0" selection-start-column="175" selection-end-line="0" selection-end-column="175" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/examples/trending/garmin.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/examples/trending/dst-systems.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/examples/trending/c-&amp;-c-group-2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="184" lean-forward="false" selection-start-line="0" selection-start-column="184" selection-end-line="0" selection-end-column="184" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/examples/trending/commerce-bank.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/examples/trending/kansas-city-public-library.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1144" lean-forward="false" selection-start-line="0" selection-start-column="1144" selection-end-line="0" selection-end-column="1144" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/examples/trending/first-national-bank-of-omaha.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
