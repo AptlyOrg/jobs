@@ -1,15 +1,9 @@
 #!/usr/bin/env bash
 
-declare -a arr=("Commerce-Bank"
-                "DST-Systems"
-                "C2FO"
-                "Kansas-City-Public-Library"
-                "First-National-Bank-of-Omaha"
-                "C-%26-C-Group-2"
-                "Garmin")
+declare -a arr=(`cat ho.txt`)
 
-trendingname="trending"
-printf '' > $trendingname.json
+trendingfile="./archive/trending.json"
+printf '' > "$trendingfile"
 
 for i in "${arr[@]}"
 do
@@ -48,7 +42,7 @@ fi
           -H 'Cache-Control: no-cache' \
           -H 'Postman-Token: bc9953ce-f706-08a3-bbf2-be05956fa3d2' \
           -H 'X-Mashape-Key: YjtQBqSWKmmshwn5c06JmE2Ut5VSp1X5Z25jsn9laldG042Uoy' \
-         >> $trendingname.json
+         >> "$trendingfile"
 
     printf "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
     printf "$decodedname download complete\n"
@@ -61,4 +55,4 @@ printf "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 printf "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
 printf "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
 printf "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
-printf "Job retrieval complete."
+printf "Trending extract complete."
