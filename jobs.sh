@@ -11,7 +11,6 @@ alljobs="$fileroot/alljobs.json"
 
 # Ephemeral file creation
 printf '' > $summaryfile
-printf '' > $alljobs
 
 for i in "${arr[@]}"
 do
