@@ -9,11 +9,13 @@ for i in "${arr[@]}"
 do
 
     decodedname=`echo ${i//%26/&} | tr "[:upper:]" "[:lower:]"`
-    limitcount=25
-    startstring=""
+    limitcount=25;
+    startstring="";
+    type='jt="parttime"&';         #Job type. Allowed values: "fulltime", "parttime", "contract", "internship", "temporary".
+    jobcount=0;
 
     jobcount=$(curl --silent --request GET  \
-        "https://indeed-indeed.p.mashape.com/apisearch?publisher=127676247689188&format=json&l=&v=2&limit=1&fromage=1&q=company:\"$i\"" \
+   "https://indeed-indeed.p.mashape.com/apisearch?publisher=127676247689188&$typeformat=json&l=&v=2&limit=1&fromage=1&q=company:\"$i\"" \
           -H 'Accept: application/json' \
           -H 'Cache-Control: no-cache' \
           -H 'Postman-Token: bc9953ce-f706-08a3-bbf2-be05956fa3d2' \
@@ -37,7 +39,7 @@ else
 fi
 
     curl -# --request GET \
-     "https://indeed-indeed.p.mashape.com/apisearch?publisher=127676247689188&format=json&l=&v=2$startstring&limit=$limitcount&q=company:\"$i\"" \
+     "https://indeed-indeed.p.mashape.com/apisearch?publisher=127676247689188&$typeformat=json&l=&v=2$startstring&limit=$limitcount&q=company:\"$i\"" \
           -H 'Accept: application/json' \
           -H 'Cache-Control: no-cache' \
           -H 'Postman-Token: bc9953ce-f706-08a3-bbf2-be05956fa3d2' \
