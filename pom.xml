@@ -6,7 +6,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.aptly.plugins</groupId>
-    <artifactId>aptly test</artifactId>
+    <artifactId>aptlytest</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
     <organization>
@@ -15,29 +15,38 @@
     </organization>
 
     <name>Jobs</name>
-    <description>Batch processing of jobs published to various job boards for Aptly Hiring Orgs</description>
+    <description>
+        Batch processing of jobs published to various job boards for Aptly Hiring Orgs
+    </description>
 
-    <plugin>
-        <groupId>org.bsc.maven</groupId>
-        <artifactId>confluence-reporting-maven-plugin</artifactId>
-        <configuration>
-            <endPoint>${confluence.home}/rest/api</endPoint>
-            <spaceKey>IN</spaceKey>
-            <parentPageTitle>.Internal</parentPageTitle>
-            <title>my-site-generation-test</title>
-            <labels>
-                <label>test</label>
-                <label>confluence</label>
-            </labels>
-            <templateWiki>${basedir}/src/site/confluence/template.confluence</templateWiki>
-            <wikiFilesExt>.confluence</wikiFilesExt>
-            <serverId>confluence-server-id</serverId>
-            <properties>
-                <prop>the_text_value</prop><!-- SIMPLE TEXT -->
-                <prop1>classpath:plugin-report.properties</prop1><!-- FROM CLASSPATH -->
-                <prop2>file://${basedir}/confluence.html</prop2><!-- FROM FILE SYSTEM -->
-            </properties>
-        </configuration>
-    </plugin>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.bsc.maven</groupId>
+                    <artifactId>confluence-reporting-maven-plugin</artifactId>
+                    <configuration>
+                        <endPoint>${confluence.home}/rest/api</endPoint>
+                        <spaceKey>IN</spaceKey>
+                        <parentPageTitle>.Internal</parentPageTitle>
+                        <title>my-site-generation-test</title>
+                        <labels>
+                            <label>test</label>
+                            <label>confluence</label>
+                        </labels>
+                        <templateWiki>${basedir}/src/site/confluence/template.confluence</templateWiki>
+                        <wikiFilesExt>.confluence</wikiFilesExt>
+                        <serverId>confluence-server-id</serverId>
+                        <properties>
+                            <prop>the_text_value</prop><!-- SIMPLE TEXT -->
+                            <prop1>classpath:plugin-report.properties</prop1><!-- FROM CLASSPATH -->
+                            <prop2>file://${basedir}/confluence.html</prop2><!-- FROM FILE SYSTEM -->
+                        </properties>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
 
 </project>
