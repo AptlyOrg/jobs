@@ -41,26 +41,25 @@
                             <url>dav:http://wes@secure.aptly.org:8090/plugins/servlet/confluence/default</url>
                             <fromDir>${basedir}/archive</fromDir>
                             <includes>*.json</includes>
-                            <toDir>Global/PUB/AP%20Home</toDir>
+                            <toDir>Global/PUB/AP Home/APtly Global Upload Center</toDir>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
     </build>
+</project>
 
-    <distributionManagement>
+
+        <!--
+            <distributionManagement>
         <site>
             <id>APtly</id>
             <name>confluence</name>
             <url>dav:http://wes@secure.aptly.org:8090/plugins/servlet/confluence/default/Global/PUB/AP%20Home/APtly%20Global%20Upload%20Center</url>
         </site>
     </distributionManagement>
-
-</project>
-
-
-        <!--plugin>
+plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-resources-plugin</artifactId>
             <version>3.0.1</version>
