@@ -15,14 +15,18 @@
         Batch processing of jobs published to various job boards for Aptly Hiring Orgs
     </description>
 
+    <dependencyManagement>
+        <dependencies>
+        </dependencies>
+    </dependencyManagement>
+
     <build>
         <extensions>
-            <extension>
-                <groupId>org.apache.maven.wagon</groupId>
-                <artifactId>wagon-webdav-jackrabbit</artifactId>
-                <version>1.0-beta-7</version>
-            </extension>
+            <groupId>org.apache.maven.wagon</groupId>
+            <artifactId>wagon-webdav-jackrabbit</artifactId>
+            <version>3.0.0</version>
         </extensions>
+
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -65,7 +69,8 @@
     <distributionManagement>
         <site>
             <id>APtly</id>
-<url>dav:http://wes:;lkjasdf@secure.aptly.org:8090/plugins/servlet/confluence/default/Global/PUB/AP%20Home/APtly%20Global%20Upload%20Center</url>
+            <url>dav:http://wes@secure.aptly.org:8090/plugins/servlet/confluence/default/Global/PUB/AP%20Home/APtly%20Global%20Upload%20Center</url>
         </site>
     </distributionManagement>
+
 </project>
