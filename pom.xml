@@ -14,56 +14,24 @@
     <description>
         Batch processing of jobs published to various job boards for Aptly Hiring Orgs
     </description>
+
     <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-webdav-jackrabbit</artifactId>
+                <version>1.0-beta-7</version>
+            </extension>
+        </extensions>
         <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.bsc.maven</groupId>
-                    <artifactId>confluence-reporting-maven-plugin</artifactId>
-                    <configuration>
-                        <endPoint>http://secure.aptly.org:8090/rest/api</endPoint>
-                        <spaceKey>IN</spaceKey>
-                        <parentPageTitle>.Internal</parentPageTitle>
-                        <title>my-site-generation-test</title>
-                        <labels>
-                            <label>test</label>
-                            <label>confluence</label>
-                        </labels>
-                        <templateWiki>${basedir}/src/site/confluence/template.confluence</templateWiki>
-                        <wikiFilesExt>.json</wikiFilesExt>
-                        <serverId>confluence-server-id</serverId>
-                        <properties>
-                            <prop>the_text_value</prop><!-- SIMPLE TEXT -->
-                            <prop1>classpath:plugin-report.properties</prop1><!-- FROM CLASSPATH -->
-                            <prop2>file://${basedir}/confluence.html</prop2><!-- FROM FILE SYSTEM -->
-                        </properties>
-                    </configuration>
-                </plugin>
-            </plugins>
         </pluginManagement>
         <plugins>
-            <plugin>
-                <groupId>org.bsc.maven</groupId>
-                <artifactId>confluence-reporting-maven-plugin</artifactId>
-                <configuration>
-                    <endPoint>${confluence.home}/rest/api</endPoint>
-                    <spaceKey>IN</spaceKey>
-                    <parentPageTitle>.Internal</parentPageTitle>
-                    <title>my-site-generation-test</title>
-                    <labels>
-                        <label>test</label>
-                        <label>confluence</label>
-                    </labels>
-                    <templateWiki>${basedir}/src/site/confluence/template.confluence</templateWiki>
-                    <wikiFilesExt>.confluence</wikiFilesExt>
-                    <serverId>confluence-server-id</serverId>
-                    <properties>
-                        <prop>the_text_value</prop><!-- SIMPLE TEXT -->
-                        <prop1>classpath:plugin-report.properties</prop1><!-- FROM CLASSPATH -->
-                        <prop2>file://${basedir}/confluence.html</prop2><!-- FROM FILE SYSTEM -->
-                    </properties>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <site>
+            <id>APtly</id>
+            <url>dav:http://secure.aptly.org/default/Global/PUB/AP%20Home/APtly%2BGlobal%2BUpload%2BCenter</url>
+        </site>
+    </distributionManagement>
 </project>
