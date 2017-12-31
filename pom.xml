@@ -15,70 +15,40 @@
         Batch processing of jobs published to various job boards for Aptly Hiring Orgs
     </description>
 
-        <!--<extensions>
+    <build>
+
+        <extensions>
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
                 <artifactId>wagon-webdav</artifactId>
             </extension>
-            extension>
-                <groupId>org.apache.maven.wagon</groupId>
-                <artifactId>wagon-webdav-jackrabbit</artifactId>
-                <version>3.0.0</version>
-            </extension
-        </extensions>-->
+        </extensions>
 
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-resources-plugin</artifactId>
-                    <version>3.0.1</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-site-plugin</artifactId>
-                    <version>3.7</version>
-                    <dependencies>
-                        <dependency><!-- add support for ssh/scp -->
-                            <groupId>org.apache.maven.wagon</groupId>
-                            <artifactId>wagon-webdav</artifactId>
-                            <version>2.8</version>
-                        </dependency>
-                    </dependencies>
-                </plugin>
-            </plugins>
-        </pluginManagement>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>3.0.1</version>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>wagon-maven-plugin</artifactId>
+                <version>1.0</version>
                 <executions>
                     <execution>
-                        <id>copy-resources</id>
+                        <id>APtly</id>
                         <phase>validate</phase>
                         <goals>
-                            <goal>copy-resources</goal>
+                            <goal>upload</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${basedir}/target/site</outputDirectory>
-                            <encoding>UTF-8</encoding>
-                            <resources>
-                                <resource>
-                                    <directory>archive</directory>
-                                    <includes>
-                                        <include>*.json</include>
-                                    </includes>
-                                    <filtering>true</filtering>
-                                </resource>
-                            </resources>
+                            <serverId>APtly</serverId>
+                            <url>dav:http://wes@secure.aptly.org:8090/plugins/servlet/confluence/default</url>
+                            <fromDir>${basedir}/archive</fromDir>
+                            <includes>*.json</includes>
+                            <toDir>Global/PUB/AP%20Home</toDir>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
     </build>
+
     <distributionManagement>
         <site>
             <id>APtly</id>
@@ -88,3 +58,32 @@
     </distributionManagement>
 
 </project>
+
+
+        <!--plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-resources-plugin</artifactId>
+            <version>3.0.1</version>
+            <executions>
+                <execution>
+                    <id>copy-resources</id>
+                    <phase>validate</phase>
+                    <goals>
+                        <goal>copy-resources</goal>
+                    </goals>
+                    <configuration>
+                        <outputDirectory>${basedir}/target/site</outputDirectory>
+                        <encoding>UTF-8</encoding>
+                        <resources>
+                            <resource>
+                                <directory>archive</directory>
+                                <includes>
+                                    <include>*.json</include>
+                                </includes>
+                                <filtering>true</filtering>
+                            </resource>
+                        </resources>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin-->
