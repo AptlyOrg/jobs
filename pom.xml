@@ -64,7 +64,7 @@
     <distributionManagement>
         <site>
             <id>APtly</id>
-            <url>dav:http://secure.aptly.org/default/Global/PUB/AP%20Home/APtly%2BGlobal%2BUpload%2BCenter</url>
+            <url>dav:http://secure.aptly.org/plugins/servlet/confluence/default/Global/PUB/AP%20Home/APtly%2BGlobal%2BUpload%2BCenter</url>
         </site>
     </distributionManagement>
 </project>
