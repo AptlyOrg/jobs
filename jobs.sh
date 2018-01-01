@@ -84,4 +84,4 @@ printf "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 cat "$summaryfile"
 mv "$summaryfile" "$summaryfile.$datestamp"
-printf "Total jobs consumed on $datestamp: <drum roll>... $totaljobcount"
+printf "Total jobs consumed on $datestamp: <drum roll>... $totaljobcount\n\n"
