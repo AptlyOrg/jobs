@@ -111,3 +111,5 @@ GitHub.sublime-settings
 /jobs.iml
 /target/
 /settings.xml
+/.idea/
+/aptlytest.iml

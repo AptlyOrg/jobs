@@ -82,6 +82,10 @@ fileroot="./archive"
 summaryfile=$fileroot"/"$locationFile$jobTypeFile"summary.txt"
 alljobs=$fileroot"/"$locationFile$jobTypeFile"alljobs.json"
 
+if [ ! -d "$fileroot" ]; then
+    mkdir "$fileroot"
+    echo "File root dir \"./archive\" missing...created." >&2
+fi
 
 
 # Ephemeral file creation
