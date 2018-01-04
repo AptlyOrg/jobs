@@ -2,7 +2,7 @@
 
 declare -a arr=(`cat ho.txt`)
 
-trendingfile="./archive/trending.json"
+trendingfile="./target/trending.json"
 printf '' > "$trendingfile"
 
 for i in "${arr[@]}"
