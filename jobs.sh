@@ -9,6 +9,7 @@ verbosity=0
 location=''
 match=''
 returnValue=0;
+prettyLocation='';
 
 containsElement() {
     match="$1"
@@ -71,8 +72,9 @@ if [ "$jobtype" ]; then
     jobTypeFile="$jobtype""."
 fi
 if [ "$location" ]; then
-    echo 'Location was found, using:' "$location";
-    locationFile="$location""."
+    prettyLocation=`echo ${location//%2C/} | tr "[:upper:]" "[:lower:]"`
+    echo 'Location was found, using:' "$prettyLocation";
+    locationFile="$prettyLocation""."
 fi
 
 # Intialize
@@ -156,9 +158,9 @@ do
 
 
     # Report back HO completion
-    printf "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
-    printf "$decodedname download complete\n"
-    printf "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
+    echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+    echo "$decodedname download complete"
+    echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
 done
 
@@ -166,12 +168,12 @@ cat "$allJobsTempFile" | jq -r '.results[]' | jq -s . > "$allJobsFinalFile"
 rm "$allJobsTempFile"
 
 # Clean up and summary reporting
-printf "  Job retrieval complete\n\n"
-printf "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
-printf "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
-printf "  SUMMARY REPORT saved to file: $summaryfile\n"
-printf "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
-printf "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
+echo "  Job retrieval complete"
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "  SUMMARY REPORT saved to file: $summaryfile"
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
 cat "$summaryfile"
 printf "Total jobs consumed on $datestamp: <drum roll>... $totaljobcount\n\n"
