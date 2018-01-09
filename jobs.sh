@@ -45,7 +45,7 @@ for var in $@; do
         ;;
         --location=?*)
             location=${var#*=};                     # Delete everything up to "=" and assign remainder
-            if [ "${#location}" -ne 5 ]; then
+            if [ "${#location}" -lt 5 ]; then
                 die 'ERROR: "--location" does not look quite right'
             fi
         ;;
@@ -80,7 +80,9 @@ datestamp=`date`
 totaljobcount=0
 fileroot="./archive"
 summaryfile=$fileroot"/"$locationFile$jobTypeFile"summary.txt"
-alljobs=$fileroot"/"$locationFile$jobTypeFile"alljobs.json"
+allJobsBaseFile=$fileroot"/"$locationFile$jobTypeFile
+allJobsTempFile=$allJobsBaseFile"alljobs.json.downloaded"
+allJobsFinalFile=$allJobsBaseFile"alljobs.json"
 
 if [ ! -d "$fileroot" ]; then
     mkdir "$fileroot"
@@ -94,7 +96,9 @@ printf '' > $summaryfile
 for i in "${orgs[@]}"
 do
     decodedname=`echo ${i//%26/&} | tr -d '.' | tr '&' '-' | tr "[:upper:]" "[:lower:]"`
-    decodednameFile=$fileroot"/"$locationFile$jobTypeFile$decodedname".json"
+    decodedNameBase=$fileroot"/"$locationFile$jobTypeFile$decodedname
+    decodedNameTempFile=$decodedNameBase".json.downloaded"
+    decodedNameFinalFile=$decodedNameBase".json"
     limitcount=25
     startstring=""
 
@@ -119,7 +123,7 @@ do
         printf "Suspended download.\n"
     else
         printf "\n\nPrepping $decodedname...\t $jobcount job(s) found!\n"
-        printf '' > "$decodednameFile"
+        printf '' > "$decodedNameTempFile"
         printf "Retrieving job(s)...\n"
     fi
 
@@ -135,12 +139,15 @@ do
 
 
     # Retrieve records -- curl will use "start" and "limit" to iterate as appropriate
-    curl -# --request GET \
+    curl -# --silent --request GET \
      "https://indeed-indeed.p.mashape.com/apisearch?publisher=127676247689188&format=json&jt=$jobtype&l=$location&v=2$startstring&limit=$limitcount&q=company:\"$i\"" \
           -H 'Accept: application/json' \
           -H 'Cache-Control: no-cache' \
           -H 'X-Mashape-Key: YjtQBqSWKmmshwn5c06JmE2Ut5VSp1X5Z25jsn9laldG042Uoy' \
-         | tee -a "$decodednameFile" "$alljobs"
+         | tee -a "$decodedNameTempFile" "$allJobsTempFile"
+
+    cat "$decodedNameTempFile" | jq -r '.results[]' | jq -s . > "$decodedNameFinalFile"
+    rm "$decodedNameTempFile"
 
     #  Probably unnecessary -- -H 'Postman-Token: bc9953ce-f706-08a3-bbf2-be05956fa3d2' \
 
@@ -155,6 +162,9 @@ do
 
 done
 
+cat "$allJobsTempFile" | jq -r '.results[]' | jq -s . > "$allJobsFinalFile"
+rm "$allJobsTempFile"
+
 # Clean up and summary reporting
 printf "  Job retrieval complete\n\n"
 printf "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
@@ -165,3 +175,4 @@ printf "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 cat "$summaryfile"
 printf "Total jobs consumed on $datestamp: <drum roll>... $totaljobcount\n\n"
+
