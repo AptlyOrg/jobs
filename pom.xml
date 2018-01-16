@@ -38,7 +38,7 @@
                         </goals>
                         <configuration>
                             <serverId>APtly</serverId>
-                            <url>dav:http://wes@secure.aptly.org:8090/plugins/servlet/confluence/default</url>
+                            <url>dav:http://wes@vpn.aptly.org/confluence/plugins/servlet/confluence/default</url>
                             <fromDir>${basedir}/archive</fromDir>
                             <includes>*.json</includes>
                             <toDir>Global/PUB/AP Home/APtly Global Upload Center</toDir>
