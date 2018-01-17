@@ -97,7 +97,7 @@ printf '' > $summaryfile
 
 for i in "${orgs[@]}"
 do
-    decodedname=`echo ${i//%26/&} | cut -c 1-15 | tr -d '.' | tr '&' '-' | tr "[:upper:]" "[:lower:]"`
+    decodedname=`echo ${i//%26/&} | tr -d '.' | tr '&' '-' | tr "[:upper:]" "[:lower:]"`
     decodedNameBase=$fileroot"/"$locationFile$jobTypeFile$decodedname
     decodedNameTempFile=$decodedNameBase".json.downloaded"
     decodedNameFinalFile=$decodedNameBase".json"
