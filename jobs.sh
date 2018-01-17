@@ -72,7 +72,7 @@ if [ "$jobtype" ]; then
     jobTypeFile="$jobtype""."
 fi
 if [ "$location" ]; then
-    prettyLocation=`echo ${location//%2C/} | tr -d '.' | tr "[:upper:]" "[:lower:]"`
+    prettyLocation=`echo ${location//%2C/} | tr '+' '-' | tr -d '.' | tr "[:upper:]" "[:lower:]"`
     echo 'Location was found, using:' "$prettyLocation";
     locationFile="$prettyLocation""."
 fi
