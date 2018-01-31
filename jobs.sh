@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
-declare -a orgs=(`cat ho.txt`)
-declare -a jobtypes=( fulltime parttime contract internship temporary )  # Defined by the Indeed API
+declare -a orgs=(`cat aptly-ho.cfg`)
+declare -a jobtypes=(`cat aptly-jt.cfg`)
+declare -a states=(`cat aptly-st.cfg`)  # unused at the moment
+
+# declare -a jobtypes=( fulltime parttime contract internship temporary )  # Defined by the Indeed API
+# declare -a states=( MO KS NE CO OH )
 
 # Initialize command line args
 jobtype=''
