@@ -1,43 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.aptly.plugins</groupId>
-    <artifactId>aptly test</artifactId>
+    <artifactId>aptlytest</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-
     <organization>
         <name>Aptly</name>
         <url>http://www.aptly.org/</url>
     </organization>
-
     <name>Jobs</name>
-    <description>Batch processing of jobs published to various job boards for Aptly Hiring Orgs</description>
+    <description>
+        Batch processing of jobs published to various job boards for Aptly Hiring Orgs
+    </description>
 
-    <plugin>
-        <groupId>org.bsc.maven</groupId>
-        <artifactId>confluence-reporting-maven-plugin</artifactId>
-        <configuration>
-            <endPoint>${confluence.home}/rest/api</endPoint>
-            <spaceKey>IN</spaceKey>
-            <parentPageTitle>.Internal</parentPageTitle>
-            <title>my-site-generation-test</title>
-            <labels>
-                <label>test</label>
-                <label>confluence</label>
-            </labels>
-            <templateWiki>${basedir}/src/site/confluence/template.confluence</templateWiki>
-            <wikiFilesExt>.confluence</wikiFilesExt>
-            <serverId>confluence-server-id</serverId>
-            <properties>
-                <prop>the_text_value</prop><!-- SIMPLE TEXT -->
-                <prop1>classpath:plugin-report.properties</prop1><!-- FROM CLASSPATH -->
-                <prop2>file://${basedir}/confluence.html</prop2><!-- FROM FILE SYSTEM -->
-            </properties>
-        </configuration>
-    </plugin>
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-webdav</artifactId>
+            </extension>
+        </extensions>
 
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>wagon-maven-plugin</artifactId>
+                <version>1.0</version>
+                <executions>
+                    <execution>
+                        <id>APtly</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>upload</goal>
+                        </goals>
+                        <configuration>
+                            <serverId>APtly</serverId>
+                            <url>dav:http://adminlocal@vpn.aptly.org/confluence/plugins/servlet/confluence/default</url>
+                            <fromDir>${basedir}/archive</fromDir>
+                            <includes>*.json</includes>
+                            <toDir>/Global/PUB/AP Home/APtly Global Upload Center</toDir>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
