@@ -72,13 +72,6 @@
       <textMaps />
     </LinkMapSettings>
   </component>
-  <component name="MavenProjectsManager">
-    <option name="originalFiles">
-      <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectResources">
     <resource url="http://maven.apache.org/POM/4.0.0" location="$APPLICATION_HOME_DIR$/lib/webstorm.jar!/standardSchemas/XMLSchema.xsd" />
   </component>

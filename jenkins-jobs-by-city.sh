@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export PATH=$PATH:.
+
 set;
 pwd;
 bash jobs.sh --location="kansas+city%2C+MO"
