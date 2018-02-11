@@ -16,7 +16,6 @@
     </description>
 
     <build>
-
         <extensions>
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
@@ -38,10 +37,10 @@
                         </goals>
                         <configuration>
                             <serverId>APtly</serverId>
-                            <url>dav:http://wes@secure.aptly.org:8090/plugins/servlet/confluence/default</url>
+                            <url>dav:https://adminlocal@vpn.aptly.org/confluence/plugins/servlet/confluence/default</url>
                             <fromDir>${basedir}/archive</fromDir>
                             <includes>*.json</includes>
-                            <toDir>Global/PUB/AP Home/APtly Global Upload Center</toDir>
+                            <toDir>/Global/PUB/AP Home/APtly Global Upload Center</toDir>
                         </configuration>
                     </execution>
                 </executions>
@@ -49,40 +48,3 @@
         </plugins>
     </build>
 </project>
-
-
-        <!--
-            <distributionManagement>
-        <site>
-            <id>APtly</id>
-            <name>confluence</name>
-            <url>dav:http://wes@secure.aptly.org:8090/plugins/servlet/confluence/default/Global/PUB/AP%20Home/APtly%20Global%20Upload%20Center</url>
-        </site>
-    </distributionManagement>
-plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-resources-plugin</artifactId>
-            <version>3.0.1</version>
-            <executions>
-                <execution>
-                    <id>copy-resources</id>
-                    <phase>validate</phase>
-                    <goals>
-                        <goal>copy-resources</goal>
-                    </goals>
-                    <configuration>
-                        <outputDirectory>${basedir}/target/site</outputDirectory>
-                        <encoding>UTF-8</encoding>
-                        <resources>
-                            <resource>
-                                <directory>archive</directory>
-                                <includes>
-                                    <include>*.json</include>
-                                </includes>
-                                <filtering>true</filtering>
-                            </resource>
-                        </resources>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin-->
