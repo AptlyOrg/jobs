@@ -181,4 +181,3 @@ echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
 cat "$summaryfile"
 printf "Total jobs consumed on $datestamp: <drum roll>... $totaljobcount\n\n"
-
